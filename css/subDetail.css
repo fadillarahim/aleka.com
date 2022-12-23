@@ -1,0 +1,46 @@
+main{
+    width: 90%;
+    background-color: red;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+/* BAGIAN ATAS */
+.detail-layanan-img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+.rating{
+    display: flex;
+}
+
+.atas, .tengah1, .tengah2{
+    border-bottom: 2px solid #7895B2;
+    width: 100%;
+}
+
+/* TENGAH */
+
+.tengah1{
+    
+}
+
+.detail-layanan-img-album{
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10%;
+    margin: 10px;
+}
+
+.tengah1-img-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

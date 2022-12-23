@@ -213,3 +213,8 @@ footer{
     margin-bottom: 0;
     
 }
+
+.jenis-paket-link{
+    text-decoration: none;
+    color: black;
+}
