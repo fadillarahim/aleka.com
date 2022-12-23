@@ -1,8 +1,10 @@
 main{
     width: 90%;
-    background-color: red;
     margin: 10px auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
     padding: 10px;
+    border-bottom: 2px solid #7895B2;
 }
 
 /* BAGIAN ATAS */
@@ -44,3 +46,109 @@ main{
     align-items: center;
 }
 
+
+/* BAWAH */
+.bawah{
+    background-color: #AEBDCA;
+    margin-top: 20px;
+    
+}
+.kalender{
+    display: flex;
+    padding: 10px;
+}
+.icon-calender-faw{
+    font-size: 30pt;
+}
+
+.icon-calender, .desc{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.selengkapnya{
+    font-style: bold;
+    color: black;
+}
+
+
+/* SECTION SAMPING */
+.harga-cont, .untuk-anda, .metodh-payment, .jmlh-pesanan-cont{
+    border: 2px solid #7895B2;
+    padding: 10px;
+}
+
+.harga{
+    color: #FFC200;
+}
+
+.untuk-anda{
+    border: 2px solid #7895B2;
+}
+
+.baca-selengkapnya{
+    text-decoration: none;
+    color: #7895B2;
+    font-weight: bold;
+}
+
+.baca-selengkapnya:hover{
+    color: #49516F;
+    text-decoration: underline;
+}
+
+.ul-methode-payment{
+    list-style: none;
+}
+
+.title-metodh-payment{
+    border-bottom: 2px solid #7895B2;
+    padding: 10px;
+}
+
+.input-jumlah-pesanan{
+    margin-left: auto;
+    width: 60%;
+    
+}
+
+.jmlh-pesanan-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.jmlh-pesanan-item{
+    margin: 0 auto;
+    
+}
+
+.btn-chat-pesan-cont{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.btn-pesan-sekarang, .btn-chat{
+    margin: 10px auto;
+    border: #7895B2 2px solid;
+    width: 180px;
+    height: fit-content;
+}
+
+.btn-pesan-sekarang{
+    background-color: #7895B2;
+    color: white;
+}
+
+.btn-pesan-sekarang:hover, .btn-chat:hover{
+    background-color: #49516F;
+    border-color: #49516F;
+    color: white;
+}
+
+.btn-chat-pesan{
+    border: none;
+}
