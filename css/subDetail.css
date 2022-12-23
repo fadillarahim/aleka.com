@@ -152,3 +152,52 @@ main{
 .btn-chat-pesan{
     border: none;
 }
+
+
+/* MODAL PESAN SEKARANG */
+.pesan-sekarang{
+    color: #49516F;
+}
+
+.pesanan-img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%; 
+}
+
+.produk-pesanan{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.btn-bayar{
+    background-color: #7895B2;
+    border: none;
+}
+
+.btn-bayar:hover{
+    background-color:#49516F;
+}
+
+.table-detail{
+    border: none;
+    padding: 10px;
+    
+}
+
+.table-detail tr{
+    margin: 10px;
+    padding: 10px;
+}
+
+.detail-pembayaran{
+    width: 60% ;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.total{
+    border-top:2px solid #7895B2 ;
+}

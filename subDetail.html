@@ -186,7 +186,7 @@
                 <div class="card btn-chat-pesan mb-5">
                     <div class="btn-chat-pesan-cont mb-2">
                         <button type="button" class="btn btn-chat me-5"> <i class="fa-solid fa-comment me-3"></i>Chat</button>
-                        <button type="button" class="btn btn-pesan-sekarang">Pesan Sekarang</button>
+                        <button type="button" class="btn btn-pesan-sekarang" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Pesan Sekarang</button>
                     </div>
                     <div class="text-center">
                         <p class="text-muted"><i>Chat untuk informasi lebih lanjut & kustomisasi produk</i></p>
@@ -195,6 +195,110 @@
             </div>
         </div>
     </main>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="pesan-sekarang-title-cont text-center mb-5">
+            <h4 class="pesan-sekarang title">Pesan Sekarang</h4>
+          </div>
+
+          <div class="card produk-pesanan mb-5">
+            <div class="row">
+                <div class="col-4 p-2 text-center">
+                    <img src="./assets/1.png" alt="" class="pesanan-img m-3">
+                </div>
+                <div class="col-6 p-2">
+                    <div class="m-3">
+                    <h6 class="title">Paket Cincorang</h6>
+                    <p class="text-muted">By Dapur Mama</p>
+                    <h6><b>Rp. 500.000. / Orang</b></h6>
+                </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="text-center mb-5" style="width: 50%; margin: 0 auto;">
+            <p>Sebelum melanjutkan ke proses pembayaran, mohon lengkapi tanggal layanan Anda terlebih dahulu.</p>
+          </div>
+
+          <div class="input-tanggal mb-5" style="width: 40%; margin: 0 auto;">
+            <h6 class="title"><b>Pilih Tanggal Layanan</b></h6>
+            <div class="mb-3">
+                <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+
+          <div class="button-bayar-cont text-center mb-5" style="width: 50%; margin: 0 auto;">
+            <button type="button" class="btn btn-primary btn-bayar" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Bayar Rp. 5.000.000.000 / 500 Orang</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="pilih-pembayaran-title-cont text-center mb-5">
+                <h4 class="pilih-pembayaran title">Pembayaran</h4>
+            </div>
+
+            <div class="card produk-pesanan mb-3">
+                <div class="row">
+                    <div class="col-4 p-2 text-center">
+                        <img src="./assets/1.png" alt="" class="pesanan-img m-3">
+                    </div>
+                    <div class="col-6 p-2">
+                        <div class="m-3">
+                        <h6 class="title">Paket Cincorang</h6>
+                        <p class="text-muted">By Dapur Mama</p>
+                        <h6><b>Rp. 500.000. / Orang</b></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card detail-pembayaran">
+                <h6 class="title"><b>Detail</b></h6>
+                <table class="table-detail">
+                      <tr>
+                        <td>Catring 500 orang</td>
+                        <td>Rp. 5.000.000.000</td>
+                      </tr>
+                      <tr>
+                        <td>Biaya Penanganan</td>
+                        <td>Rp. 600.000</td>
+                      </tr>
+                      <tr>
+                        <td>Biaya Aplikasi</td>
+                        <td>Rp. 100.000</td>
+                      </tr>
+                      <tr class="total">
+                        <td><b>Total</b></td>
+                        <td><b>Rp. 5.700.000.000</b></td>
+                      </tr>
+                  </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
