@@ -51,41 +51,33 @@
                                 
                     <!-- search-->
                     <div class="row">
-                        <div class="dropdown col">
-                            <button class="btn btn-secondary btn-lg dropdown-toggle search-vendor-btn container" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Category
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Catering</a></li>
-                              <li><a class="dropdown-item" href="#">Band</a></li>
-                              <li><a class="dropdown-item" href="#">Wedding Dress</a></li>
-                              <li><a class="dropdown-item" href="#">MUA</a></li>
-                            </ul>
+                        <div class="col">
+                            <select class="form-select form-select-lg search-vendor-btn container" aria-label="Default select example">
+                                <option selected>Category</option>
+                                <option value="1">Catering</option>
+                                <option value="2">Band</option>
+                                <option value="3">Wedding Dress</option>
+                                <option value="3">MUA</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="form-select form-select-lg search-vendor-btn container" aria-label="Default select example">
+                                <option selected>Semua Kota</option>
+                                <option value="1">Semarang</option>
+                                <option value="2">Depok</option>
+                                <option value="3">Bogor</option>
+                                <option value="3">Bandung</option>
+                                <option value="3">Jakarta</option>
+                            </select>
                         </div>
                         <div class="dropdown col">
-                            <button class="btn btn-secondary btn-lg dropdown-toggle search-vendor-btn container" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Kota
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Semua Kota</a></li>
-                                <li><a class="dropdown-item" href="#">Semarang</a></li>
-                              <li><a class="dropdown-item" href="#">Depok</a></li>
-                              <li><a class="dropdown-item" href="#">Bogor</a></li>
-                              <li><a class="dropdown-item" href="#">Bandung</a></li>
-                              <li><a class="dropdown-item" href="#">Jakarta</a></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown col">
-                            <button class="btn btn-secondary btn-lg dropdown-toggle search-vendor-btn container" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Harga
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Semua Harga</a></li>
-                              <li><a class="dropdown-item" href="#"> < Rp. 1.000.000</a></li>
-                              <li><a class="dropdown-item" href="#">Rp. 1.000.000 - Rp. 3.000.000</a></li>
-                              <li><a class="dropdown-item" href="#">Rp. 3.000.000 - Rp. 8.000.000</a></li>
-                              <li><a class="dropdown-item" href="#"> > Rp. 3.000.000</a></li>
-                            </ul>
+                            <select class="form-select form-select-lg search-vendor-btn container" aria-label="Default select example">
+                                <option selected>Semua Range Harga</option>
+                                <option value="1">< Rp. 1.000.000</option>
+                                <option value="2">Rp. 1.000.000 - Rp. 3.000.000</option>
+                                <option value="3">Rp. 3.000.000 - Rp. 8.000.000</option>
+                                <option value="3">> Rp. 3.000.000</option>
+                            </select>
                         </div>
                         <div class="col-auto"><button class="btn btn-primary btn-lg btn-search" id="submitButton" type="submit">Cari Layanan</button></div>
                     </div>
@@ -177,7 +169,7 @@
                             <h5 class="title">Jumlah</h5>
                         </div>
                         <div class="jmlh-pesanan-item">
-                            <form action="submit" class="input-jumlah-pesanan">
+                            <form action="submit" class="shadow card input-jumlah-pesanan">
                                 <input type="number" class="form-control">
                             </form>
                         </div>
@@ -245,8 +237,9 @@
     </div>
   </div>
 
+  <!-- MODAL2 -->
   <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -292,10 +285,25 @@
                       </tr>
                   </table>
             </div>
+
+            <div class="pilih-bank mt-5 text-center">
+                <div class="input-tanggal mb-5 text-center" style="width: 50%; margin: 0 auto;">
+                    <h6 class="title"><b>Pilih Bank</b></h6>
+                    <select class="form-select container" aria-label="Default select example">
+                        <option selected>Pilih Bank</option>
+                        <option value="1">Bank Rakyat Indonesia (BRI)</option>
+                        <option value="2">bank Negara Indonesia (BNI)</option>
+                        <option value="3">Bank Central Asia (BCA)</option>
+                        <option value="4">Bank Mandiri</option>
+                    </select>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+
+        <div class="button-bayar-cont text-center mb-5" style="width: 50%; margin: 0 auto;">
+            <button type="button" class="btn btn-primary btn-bayar" data-bs-target="#" data-bs-toggle="modal">Bayar Rp. 5.000.000.000 / 500 Orang</button>
         </div>
+
       </div>
     </div>
   </div>
